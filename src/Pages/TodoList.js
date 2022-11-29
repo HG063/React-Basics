@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Task } from "../Components/Task";
+import { Form } from "react-bootstrap";
 
 export const TodoList = () => {
   const [todoList, setTodoList] = useState([]);
@@ -12,7 +13,8 @@ export const TodoList = () => {
     setNewTask(event.target.value);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const task = {
       id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
       taskName: newTask,
@@ -48,10 +50,11 @@ export const TodoList = () => {
   };
 
   return (
-    <div>
-      <br />
-      <input type="text" onChange={handleChange} />
-      <button onClick={handleSubmit}>Add Task</button>
+    <div className="mt-3">
+      <Form onSubmit={handleSubmit}>
+        <input type="text" onChange={handleChange} />
+        <button type="submit">Add Task</button>
+      </Form>
       {todoList.map((task) => {
         return (
           <Task

@@ -1,23 +1,13 @@
 import React from "react";
+import JobData from "../Components/JobData";
 
 export const Job = () => {
   return (
     <div>
-      <h1>Job</h1>
-      <Data salary={10000} position="HR" company="Meta" />
-      <Data salary={90000} position="Senior SDE" company="Amazon" />
-      <Data salary={20000} position="Junior SDE" company="Google" />
-    </div>
-  );
-};
-
-const Data = (props) => {
-  return (
-    <div>
-      <h3>
-        Salary: {props.salary}, Position: {props.position}, Company:{" "}
-        {props.company}
-      </h3>
+      <h2 className="mt-3">Job</h2>
+      <JobData salary={10000} position="HR" company="Meta" />
+      <JobData salary={90000} position="Senior SDE" company="Amazon" />
+      <JobData salary={20000} position="Junior SDE" company="Google" />
     </div>
   );
 };

@@ -11,8 +11,9 @@ export const Profile = () => {
   };
   return (
     <div>
-      <h1>Profile Page</h1>
-      <h3>Name : {userName}</h3>
+      <h2 className="mt-3">Profile Page</h2>
+      <h5>Name : {userName}</h5>
+      <p className="mt-3 mb-2">Enter Name to Update:</p>
       <input
         type="text"
         placeholder="Enter Name"
@@ -20,7 +21,7 @@ export const Profile = () => {
           setNewUserName(event.target.value);
         }}
       />
-      <button onClick={ChangeName}>Change Name</button>
+      <button onClick={ChangeName}>Submit</button>
     </div>
   );
 };

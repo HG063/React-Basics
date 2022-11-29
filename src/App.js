@@ -11,13 +11,14 @@ import { GasPlanets } from "./Pages/GasPlanets";
 import { TodoList } from "./Pages/TodoList";
 import { PredictAge } from "./Pages/PredictAge";
 import { DogImage } from "./Pages/DogImage";
-import { Form } from "./Components/Form";
+import { Form } from "./Pages/Form";
 
 export const AppContext = createContext();
 
 function App() {
   const [userName, setUserName] = useState("Harshit Gupta");
   const [phone, setPhone] = useState("+91-7389248920");
+
   return (
     <div className="App">
       <AppContext.Provider value={{ userName, setUserName, phone, setPhone }}>

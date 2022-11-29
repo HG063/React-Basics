@@ -40,8 +40,8 @@ export const Form = () => {
 
   return (
     <div>
-      <h1>Form</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <h2 className="mt-3">Form</h2>
+      <form className="mt-3" onSubmit={handleSubmit(onSubmit)}>
         <input
           type="text"
           placeholder="Enter First Name"

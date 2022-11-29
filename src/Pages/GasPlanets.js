@@ -20,15 +20,15 @@ export const GasPlanets = () => {
         }}>
         Planets
       </button>
-      {showGas && !planets.GasPlanets && <h1>Gas Planets</h1>}
+      {showGas && !planets.GasPlanets && <h2 className="mt-3">Gas Planets</h2>}
       {showGas &&
         planets.map(
-          (planets) => planets.isGasPlanet && <h3>{planets.name}</h3>
+          (planets) => planets.isGasPlanet && <h5>{planets.name}</h5>
         )}
-      {showNotGas && !planets.GasPlanets && <h1>Planets</h1>}
+      {showNotGas && !planets.GasPlanets && <h2 className="mt-3">Planets</h2>}
       {showNotGas &&
         planets.map(
-          (planets) => !planets.isGasPlanet && <h3>{planets.name}</h3>
+          (planets) => !planets.isGasPlanet && <h5>{planets.name}</h5>
         )}
     </div>
   );

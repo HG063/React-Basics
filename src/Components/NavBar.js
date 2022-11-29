@@ -1,73 +1,26 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 export default function NavBar() {
-  const navigate = useNavigate();
   return (
     <div>
-      <button
-        onClick={() => {
-          navigate("/");
-        }}>
-        Home
-      </button>
-      <button
-        onClick={() => {
-          navigate("/Profile");
-        }}>
-        Profile
-      </button>
-      <button
-        onClick={() => {
-          navigate("/Contact");
-        }}>
-        Contact
-      </button>
-      <button
-        onClick={() => {
-          navigate("/Counter");
-        }}>
-        Counter
-      </button>
-      <button
-        onClick={() => {
-          navigate("/Job");
-        }}>
-        Job
-      </button>
-      <button
-        onClick={() => {
-          navigate("/GasPlanets");
-        }}>
-        Planets
-      </button>
-      <button
-        onClick={() => {
-          navigate("/TodoList");
-        }}>
-        TodoList
-      </button>
-      <button
-        onClick={() => {
-          navigate("/PredictAge");
-        }}>
-        Predict Age
-      </button>
-      <button
-        onClick={() => {
-          navigate("/DogImage");
-        }}>
-        Dog Image
-      </button>
-      <button
-        onClick={() => {
-          navigate("/Form");
-        }}>
-        Form
-      </button>
-      {/* <Link to="/">Home</Link>
-      <Link to="/Profile">Profile</Link>
-      <Link to="/Contact">Contact</Link> */}
+      <Navbar bg="light" variant="light">
+        <Container>
+          <Navbar.Brand href="/">React POC</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Profile">Profile</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/Counter">Counter</Nav.Link>
+            <Nav.Link href="/Job">Job</Nav.Link>
+            <Nav.Link href="/GasPlanets">GasPlanets</Nav.Link>
+            <Nav.Link href="/TodoList">TodoList</Nav.Link>
+            <Nav.Link href="/PredictAge">PredictAge</Nav.Link>
+            <Nav.Link href="/DogImage">DogImage</Nav.Link>
+            <Nav.Link href="/Form">Form</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </div>
   );
 }

@@ -7,10 +7,11 @@ export const Contact = () => {
   const [newPhone, setNewPhone] = useState(phone);
   return (
     <div>
-      <h1>Contact Page</h1>
-      <h3>
+      <h2 className="mt-3">Contact Page</h2>
+      <h5>
         Contact Details of {userName} : {phone}
-      </h3>
+      </h5>
+      <p className="mt-3 mb-2">Enter Number to Update:</p>
       <input
         type="text"
         placeholder="Enter Phone Number"
@@ -22,7 +23,7 @@ export const Contact = () => {
         onClick={() => {
           setPhone(newPhone);
         }}>
-        Change Phone No.
+        Submit
       </button>
     </div>
   );
