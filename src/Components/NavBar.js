@@ -8,79 +8,61 @@ export default function NavBar() {
       <button
         onClick={() => {
           navigate("/");
-        }}
-      >
+        }}>
         Home
       </button>
       <button
         onClick={() => {
           navigate("/Profile");
-        }}
-      >
+        }}>
         Profile
       </button>
       <button
         onClick={() => {
           navigate("/Contact");
-        }}
-      >
+        }}>
         Contact
       </button>
       <button
         onClick={() => {
           navigate("/Counter");
-        }}
-      >
+        }}>
         Counter
       </button>
       <button
         onClick={() => {
           navigate("/Job");
-        }}
-      >
+        }}>
         Job
       </button>
       <button
         onClick={() => {
           navigate("/GasPlanets");
-        }}
-      >
+        }}>
         Planets
       </button>
       <button
         onClick={() => {
           navigate("/TodoList");
-        }}
-      >
+        }}>
         TodoList
-      </button>
-
-      <button
-        onClick={() => {
-          navigate("/Excuse");
-        }}
-      >
-        Excuse
       </button>
       <button
         onClick={() => {
           navigate("/PredictAge");
-        }}
-      >
+        }}>
         Predict Age
       </button>
       <button
         onClick={() => {
           navigate("/DogImage");
-        }}
-      >
+        }}>
         Dog Image
       </button>
       <button
         onClick={() => {
           navigate("/Form");
-        }}
-      >
+        }}>
         Form
       </button>
       {/* <Link to="/">Home</Link>

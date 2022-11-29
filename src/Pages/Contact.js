@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useContext } from "react";
-import { AppContext } from "./App";
+import { AppContext } from "../App";
 
 export const Contact = () => {
   const { userName, phone, setPhone } = useContext(AppContext);
@@ -21,8 +21,7 @@ export const Contact = () => {
       <button
         onClick={() => {
           setPhone(newPhone);
-        }}
-      >
+        }}>
         Change Phone No.
       </button>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import planets from "./Planets";
+import planets from "../Components/Planets";
 export const GasPlanets = () => {
   const [showGas, setShowGas] = useState(false);
   const [showNotGas, setShowNotGas] = useState(false);
@@ -10,16 +10,14 @@ export const GasPlanets = () => {
         onClick={() => {
           setShowGas(!showGas);
           showNotGas ? setShowNotGas(!showNotGas) : setShowNotGas(showNotGas);
-        }}
-      >
+        }}>
         GasPlanets
       </button>
       <button
         onClick={() => {
           setShowNotGas(!showNotGas);
           showGas ? setShowGas(!showGas) : setShowGas(showGas);
-        }}
-      >
+        }}>
         Planets
       </button>
       {showGas && !planets.GasPlanets && <h1>Gas Planets</h1>}

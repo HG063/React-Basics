@@ -1,18 +1,17 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home } from "./Home";
-import { Profile } from "./Profile";
-import { Contact } from "./Contact";
-import NavBar from "./NavBar";
+import { Home } from "./Pages/Home";
+import { Profile } from "./Pages/Profile";
+import { Contact } from "./Pages/Contact";
+import NavBar from "./Components/NavBar";
 import { useState, createContext } from "react";
-import { Counter } from "./Counter";
-import { Job } from "./Job";
-import { GasPlanets } from "./GasPlanets";
-import { TodoList } from "./TodoList";
-import { Excuse } from "./Excuse";
-import { PredictAge } from "./PredictAge";
-import { DogImage } from "./DogImage";
-import { Form } from "./Form";
+import { Counter } from "./Pages/Counter";
+import { Job } from "./Pages/Job";
+import { GasPlanets } from "./Pages/GasPlanets";
+import { TodoList } from "./Pages/TodoList";
+import { PredictAge } from "./Pages/PredictAge";
+import { DogImage } from "./Pages/DogImage";
+import { Form } from "./Components/Form";
 
 export const AppContext = createContext();
 
@@ -32,7 +31,6 @@ function App() {
             <Route path="/Job" element={<Job />} />
             <Route path="/GasPlanets" element={<GasPlanets />} />
             <Route path="/TodoList" element={<TodoList />} />
-            <Route path="/Excuse" element={<Excuse />} />
             <Route path="/PredictAge" element={<PredictAge />} />
             <Route path="/DogImage" element={<DogImage />} />
             <Route path="/Form" element={<Form />} />

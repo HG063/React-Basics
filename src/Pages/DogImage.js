@@ -15,8 +15,7 @@ export const DogImage = () => {
       <button
         onClick={() => {
           handleChange();
-        }}
-      >
+        }}>
         Dog Image
       </button>
       <br />
