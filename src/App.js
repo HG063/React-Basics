@@ -25,16 +25,16 @@ function App() {
         <Router>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/Profile" element={<Profile />}></Route>
-            <Route path="/Contact" element={<Contact />}></Route>
-            <Route path="/Counter" element={<Counter />} />
-            <Route path="/Job" element={<Job />} />
-            <Route path="/GasPlanets" element={<GasPlanets />} />
-            <Route path="/TodoList" element={<TodoList />} />
-            <Route path="/PredictAge" element={<PredictAge />} />
-            <Route path="/DogImage" element={<DogImage />} />
-            <Route path="/Form" element={<Form />} />
+            <Route path="/React-Basics" element={<Home />}></Route>
+            <Route path="/React-Basics/Profile" element={<Profile />}></Route>
+            <Route path="/React-Basics/Contact" element={<Contact />}></Route>
+            <Route path="/React-Basics/Counter" element={<Counter />} />
+            <Route path="/React-Basics/Job" element={<Job />} />
+            <Route path="/React-Basics/GasPlanets" element={<GasPlanets />} />
+            <Route path="/React-Basics/TodoList" element={<TodoList />} />
+            <Route path="/React-Basics/PredictAge" element={<PredictAge />} />
+            <Route path="/React-Basics/DogImage" element={<DogImage />} />
+            <Route path="/React-Basics/Form" element={<Form />} />
           </Routes>
         </Router>
       </AppContext.Provider>
