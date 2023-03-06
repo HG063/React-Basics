@@ -14,7 +14,6 @@ export const PredictAge = () => {
   useEffect(() => {
    handleChange();
    // eslint-disable-next-line
-   // eslint-disable-next-line
   },[]);
 
   return (
