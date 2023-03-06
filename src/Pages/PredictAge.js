@@ -12,10 +12,9 @@ export const PredictAge = () => {
   };
 
   useEffect(() => {
-    fetch(`https://api.agify.io/?name=Harshit`)
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
+   handleChange();
+   // eslint-disable-next-line
+  },[]);
 
   return (
     <div>

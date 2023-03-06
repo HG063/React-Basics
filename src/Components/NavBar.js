@@ -8,16 +8,16 @@ export default function NavBar() {
         <Container>
           <Navbar.Brand href="/">React POC</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/React-Basics">Home</Nav.Link>
-            <Nav.Link href="/React-Basics/Profile">Profile</Nav.Link>
-            <Nav.Link href="/React-Basics/Contact">Contact</Nav.Link>
-            <Nav.Link href="/React-Basics/Counter">Counter</Nav.Link>
-            <Nav.Link href="/React-Basics/Job">Job</Nav.Link>
-            <Nav.Link href="/React-Basics/GasPlanets">GasPlanets</Nav.Link>
-            <Nav.Link href="/React-Basics/TodoList">TodoList</Nav.Link>
-            <Nav.Link href="/React-Basics/PredictAge">PredictAge</Nav.Link>
-            <Nav.Link href="/React-Basics/DogImage">DogImage</Nav.Link>
-            <Nav.Link href="/React-Basics/Form">Form</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Profile">Profile</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/Counter">Counter</Nav.Link>
+            <Nav.Link href="/Job">Job</Nav.Link>
+            <Nav.Link href="/GasPlanets">GasPlanets</Nav.Link>
+            <Nav.Link href="/TodoList">TodoList</Nav.Link>
+            <Nav.Link href="/PredictAge">PredictAge</Nav.Link>
+            <Nav.Link href="/DogImage">DogImage</Nav.Link>
+            <Nav.Link href="/Form">Form</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

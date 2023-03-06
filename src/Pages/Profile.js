@@ -6,7 +6,8 @@ import { AppContext } from "../App";
 export const Profile = () => {
   const { userName, setUserName } = useContext(AppContext);
   const [newUserName, setNewUserName] = useState(userName);
-  const ChangeName = () => {
+  const ChangeName = (e) => {
+    e.preventDefault();
     setUserName(newUserName);
   };
   return (

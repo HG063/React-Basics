@@ -12,11 +12,7 @@ export const DogImage = () => {
   };
 
   useEffect(() => {
-    Axios.get("https://dog.ceo/api/breeds/image/random").then((res) => {
-      getImage(res.data.message);
-      console.log("Check");
-      return;
-    });
+  handleChange();
   }, []);
 
   return (
